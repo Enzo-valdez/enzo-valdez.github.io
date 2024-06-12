@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Museo de Nuestra Amistad</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\Enzo\Desktop\detalle\css\style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0e5e8; /* Fondo rosa pastel */
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center; /* Centrar las imágenes horizontalmente */
+        }
+        .gallery-item {
+            flex: 0 0 calc(25% - 20px);
+            box-sizing: border-box;
+            background-color: #aed9e0; /* Celeste pastel */
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center; /* Centrar el contenido */
+            overflow: hidden; /* Para asegurar que las imágenes no se salgan de su contenedor */
+        }
+        .gallery-item img {
+            width: 100%;
+            display: block;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out; /* Transición suave al pasar el ratón */
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1); /* Escalar la imagen al pasar el ratón */
+        }
+        .gallery-item p {
+            margin: 0;
+            margin-top: 10px;
+            color: #3f3d56; /* Color de texto azul pastel */
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .menu a {
+            text-decoration: none;
+            color: #3f3d56; /* Color de texto azul pastel */
+            margin: 0 10px;
+            font-size: 18px;
+        }
+        .menu a:hover {
+            text-decoration: underline;
+        }
+        /* Estilo para las decoraciones de flores */
+        .flower-decoration {
+            position: absolute;
+            z-index: -1;
+            pointer-events: none;
+        }
+        .flower-top-left {
+            top: 0;
+            left: 0;
+            width: 150px;
+        }
+        .flower-top-right {
+            top: 0;
+            right: 0;
+            width: 150px;
+        }
+        .flower-bottom-left {
+            bottom: 0;
+            left: 0;
+            width: 150px;
+        }
+        .flower-bottom-right {
+            bottom: 0;
+            right: 0;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>El Museo de Nuestra Amistad</h1>
+    <p id="versiculo">
+
+Encontrar un amigo fiel
+es como dar con un tesoro
+o como hallar un refugio seguro.
+Un amigo fiel no tiene precio:
+su valor no se mide con dinero.
+ Un amigo así nos salvará la vida.
+Si obedecemos a Dios,
+hallaremos ese amigo,
+y sabremos reconocerlo
+porque él también obedece a Dios.
+Eclesiástico 6:14-17</p>
+    <div class="gallery">
+        <div id="fotitos" class="gallery-item">
+            <img src="img/foto1.jpg" alt="Imagen 1">
+            <p>haciendonos los lindos en el cumpleaños de lautaro, te hacia trampa en el juego de quien aguanta mas tiempo debajo del agua</p>
+        </div>
+        <div class="gallery-item">
+            <img src="img/foto2.jpg" alt="Imagen 2">
+            <p>vos retandome como de costumbre para que yo haga la tarea y yo sacandome fotos con filtros de perro jajaa</p>
+        </div>
+        <div class="gallery-item">
+            <img src="img/foto3.jpg" alt="Imagen 3">
+            <p>aca despues de recibir un pelotazo y despues de casi ahogarme en la pile pq me queria hacer el capo tirandome de clavado</p>
+        </div>
+        <div class="gallery-item">
+            <img src="img/foto5.jpg" alt="Imagen 5">
+            <p>aca en el depa de ana a punto de comer pizza, ver una peli triste y luego salir a que Dios nos ministre juntos, uno de mis mejores recuerdos con vos</p>
+        </div>
+                <div id="leeme" class="gallery-item">
+            <img src="img/foto4.jpg" alt="Imagen 4">
+            <p>esta es de este año, nuestro ultimo año de clases, en el mismo salon, como siempre vos tratando de hacer tarea y yo molestando ajaj</p>
+        </div>
+                <div id="leeme" class="gallery-item">
+            <img src="img/foto12.png" alt="Imagen 4">
+            <p>gracias por ser esa amiga que podria llamar hermana y no solo en cristo, sino que tambien del corazon.</p>
+        </div>
+    </div>
+    <p class="message">
+    Desde el primer momento en que te conocí, supe que serías una persona especial en mi vida. Tu risa contagiosa, tu bondad infinita y tu pasión han llenado mis días de alegría y color. Eres una amiga increíble, alguien con quien siempre puedo contar y con quien comparto momentos increíbles. Esta notita está dedicada a ti (solamente a ti, no la subas a WhatsApp que me da vergüenza), a nuestras risas y recuerdos. En nuestra galería, he puesto algunas de mis fotos favoritas y he dejado notitas debajo de cada una, con el fin de que no solo queden guardadas en mi corazón sino también en el tuyo. Gracias por ser esa amiga que siempre está ahí y, como te dije estos días, esa persona con quien puedo ser simplemente yo. Te he mostrado (y sigo mostrando) partes de mí que nadie conoce, y espero que tú puedas hacer lo mismo conmigo. Espero que te guste este regalito tanto como a mí me gustó crearlo para ti. Quiero agradecerte especialmente por impulsarme a ser mejor en los estudios y en la vida. Tu apoyo constante y tus palabras de aliento me motivan a alcanzar mis metas y a seguir creciendo cada día. Gracias por creer en mí, incluso cuando yo dudaba de mí mismo. Dios sabe lo agradecido y alegre que estoy de tenerte en mi vida.
+</p>
+
+    <!-- Decoraciones de flores -->
+    <img src="img/flor.png" alt="Flor" class="flower-decoration flower-top-left">
+    <img src="img/flor2.png" alt="Flor" class="flower-decoration flower-top-right">
+    <img src="img/flor2.png" alt="Flor" id="flor_abajo" class="flower-decoration flower-bottom-left">
+    <img src="img/flor.png" alt="Flor" id="flor_abajo"  class="flower-decoration flower-bottom-right">
+</body>
+</html>
